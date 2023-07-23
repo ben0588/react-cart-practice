@@ -8,11 +8,11 @@ const Card = ({ id, imgPath, title, price }) => {
         <div className='card h-100 border border-2'>
             <img src={imgPath} className='card-img-top object-fit w-100' alt={title} style={{ height: `180px` }} />
             <div className='card-body'>
-                <div className='d-flex justify-content-between align-items-center '>
-                    <h6 className='fs-6 fw-bolder m-0'>{title}</h6>
-                    <small className='fw-bolder'>NT$ {price}</small>
+                <div className='d-flex justify-content-between align-items-center flex-column flex-xl-row'>
+                    <h6 className='fs-6 fw-bolder mb-2 m-xl-0'>{title}</h6>
+                    <small className='fw-bolder text-muted'>NT$ {price}</small>
                 </div>
-                <div className='btn-group d-flex justify-content-evenly align-items-center mx-auto mt-3 '>
+                <div className='btn-group d-flex justify-content-evenly align-items-center  mx-auto mt-3 '>
                     <button
                         type='button'
                         className='btn btn-light '
